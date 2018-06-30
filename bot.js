@@ -6,7 +6,7 @@ client.on('ready', () => {
   console.log(` ${client.user.tag} est desormais en ligne [ Coder par Allovice. ]`);
 });
 
-client.login('NDU3OTM4NTA2NTE0MzAwOTI5.DggX_Q.-hyOf_1Wi1bM70aBjgMNnBe7XHI');
+client.login(process.env.TOKEN);
 
 client.on('message', msg => {
   if (msg.content === '!spotify') {
